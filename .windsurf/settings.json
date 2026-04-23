@@ -1,0 +1,18 @@
+{
+  "autoRun": {
+    "onSave": {
+      "patterns": ["*.py"],
+      "command": "python security_linter.py ${file}",
+      "workingDirectory": ".",
+      "showOutput": true,
+      "stopOnError": false
+    }
+  },
+  "linting": {
+    "enabled": true,
+    "securityLinter": {
+      "enabled": true,
+      "severity": "high"
+    }
+  }
+}
